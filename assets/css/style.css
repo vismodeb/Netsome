@@ -1,0 +1,974 @@
+/* 
+  Template Name: Netsome
+  Template URI: 
+  Author Name: Uttam Roy
+  Author URI: 
+  Version: 1.0.0
+  Description: This is figma to HTML website.
+  Tags: figma, html, Css, Bootstrap
+*/
+/****** Google fonts *******/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Default Css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  overflow-x: hidden !important;
+}
+body{
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+ul,ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+img{
+  width: 100%;
+}
+.btn1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding: 16px 44px;
+  background: #3C58F7;
+  border-radius: 30px;
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+.btn1:hover{
+  border: 1px solid #FAFAFA;
+  background: #0B1D2F;
+}
+.btn2{
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  background: #0B1D2F;
+  padding: 16px 34px;
+  transition: 0.5s;
+}
+.btn2:hover{
+  border: 1px solid transparent !important;
+  background: #3C58F7 !important;
+}
+.btn3{
+  border: 1px solid #FAFAFA;
+  background: #0B1D2F;
+  transition: 0.5s;
+}
+.btn3:hover{
+  border: 1px solid transparent !important;
+  background: #3C58F7 !important;
+}
+.btn1:hover{
+  background: #0B1D2F;
+  border: 1px solid #FAFAFA;
+  color: #fff;
+}
+.container{
+  max-width: 1110px;
+  width: 100%;
+  margin: auto;
+}
+h1{
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 70px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+h3{
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* ===================================================================
+                            Header Area CSS Start
+====================================================================*/
+.header-area{
+  padding: 30px 0;
+}
+.header-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 99999;
+}
+.header-logo img{
+  width: 161.78px;
+  height: auto;
+  margin-right: 20px;
+}
+.header-display{
+  display: block;
+  max-width: 1020px;
+  width: 100%;
+}
+.header-nav-area{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-button {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.header-button a{
+  margin-left: 20px;
+}
+.header-nav{
+  width: 100%;
+}
+.header-nav nav ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header-nav nav ul li a{
+  padding: 0 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  transition: 0.5s;
+}
+.header-nav nav ul li a.active,
+.header-nav nav ul li a:hover{
+  color: #888888;
+}
+
+
+/* mobile menu icon css start */
+.mobile-menu {
+  position: absolute;
+  right: 0px;
+  display: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#nav-icon4 {
+  width: 28px;
+  height: 23px;
+  position: relative;
+  margin: 0px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 0px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+#nav-icon4 span:nth-child(2) {
+  top: 8px;
+  transform-origin: left center;
+}
+#nav-icon4 span:nth-child(3) {
+  top: 16px;
+  transform-origin: left center;
+}
+#nav-icon4.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -2px;
+  left: 2px;
+}
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+#nav-icon4.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 18px;
+  left: 2px;
+}
+/* mobile menu icon css end */
+/* ===================================================================
+                            Header Area CSS End
+====================================================================*/
+
+
+/* ===================================================================
+                            Banner Area Css Start
+====================================================================*/
+.banner-area{
+  padding-top: 19px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 50px 120px;
+}
+.banner-header{
+  background: url(../images/banner-bg.png) no-repeat scroll center center / cover;
+}
+.banner-content{
+  max-width: 490px;
+  float: right !important;
+  padding-left: 12px;
+}
+.banner-content p{
+  color:#fff;
+  padding-top: 18px;
+  padding-bottom: 32px;
+  font-size: 18px;
+  line-height: 28px;
+}
+.banner-button{
+  display: flex;
+  align-items: center;
+}
+/* .banner-image img{
+  max-height: 528px;
+  height: 100%;
+  width: 100%;
+} */
+.banner-image .banner-mobile{
+  display: none;
+}
+.banner-image{
+  position: relative;
+}
+.banner-image .banner-mb {
+  position: absolute;
+  left: -133px;
+  top: -137px;
+  height: 740px;
+  width: auto;
+}
+.banner-image img {
+  max-height: initial;
+  height: auto;
+  width: 100%;
+  max-width: 660px;
+  padding: 60px 0 0 30px;
+}
+.banner-button .btn3{
+  margin-left: 20px;
+}
+.down-arrow{
+  display: flex;
+  justify-content: center;
+  padding: 35px 0 40px 0;
+}
+.down-arrow a img{
+  height: 20px;
+  width: auto;
+}
+
+.animation-icon {
+	-webkit-animation: icon-animate 4s linear infinite;
+	        animation: icon-animate 4s linear infinite;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX;
+	    -ms-transform: translateX;
+	        transform: translateX(-50%);
+}
+@-webkit-keyframes icon-animate {
+	0%{
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+		opacity: .9;
+	}
+	50%{
+		-webkit-transform: translateY(-30px);
+		        transform: translateY(-30px);
+		opacity: 1;
+		color:  var(--button-color) !important;
+	}
+	100%{
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+		opacity: .5;
+	}
+	
+}
+@keyframes icon-animate {
+	0%{
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+		opacity: .9;
+	}
+	50%{
+		-webkit-transform: translateY(-30px);
+		        transform: translateY(-30px);
+		opacity: 1;
+		color:  var(--button-color) !important;
+	}
+	100%{
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+		opacity: .5;
+	}
+	
+}
+/* ===================================================================
+                            Banner Area Css End
+====================================================================*/
+
+
+/* ===================================================================
+                            Video Css Start
+====================================================================*/
+.video-area{
+  text-align: center;
+  padding-bottom: 133px;
+}
+.video-area h2{
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  color: #000000;
+  padding: 61px 0 32px 0;
+  text-transform: capitalize;
+}
+.video-max iframe{
+  max-width: 920px;
+  width: 100%;
+  height: 484px;
+  margin: auto;
+  border-radius: 32px;
+}
+
+
+/* .video-max{
+  max-width: 920px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  background: url(../images/thumbnal.png) no-repeat scroll center center / cover;
+  padding: 204px 0px;
+  border-radius: 32px;
+} */
+/* .video-max::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  opacity: 0.4;
+  border-radius: 32px;
+  z-index: 9;
+} */
+.video-max a img{
+  position: relative;
+  height: 67px;
+  width: 67px;
+  z-index: 99;
+  cursor: pointer;
+}
+/* ===================================================================
+                            Video Css End
+====================================================================*/
+
+
+/* ===================================================================
+                            Business Css Start
+====================================================================*/
+.business-section{
+  background: url(../images/banner-bg2.png) no-repeat scroll center center / contain;
+  /* background-repeat: no-repeat; */
+  background-size: 100% 100%;
+}
+.dein-network{
+  display: flex;
+  align-items: self-end;
+  padding: 109px 0 90px 0;
+  border-bottom: 1px solid #1D4062;
+}
+.dein-network-content{
+  flex-basis: 515px;
+  margin-right: 67px;
+}
+.dein-network-content h3{
+  color: #fff;
+}
+.dein-network-content p{
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 0 12px 0;
+}
+.dein-network-content a{
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.8);
+}
+.dein-network-image{
+  flex-basis: 556px;
+}
+
+.vorteil-title{
+  max-width: 514px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 294px;
+}
+.vorteil-title h3{
+  color: #fff;
+  text-transform: capitalize;
+  padding-bottom: 12px;
+  padding-top: 75px;
+}
+.vorteil-title p{
+  color: rgba(255, 255, 255, 0.8);
+}
+/* ===================================================================
+                            Business Css End
+====================================================================*/
+
+
+/* ===================================================================
+                            Vorteil Css Start
+====================================================================*/
+.vorteil-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  margin-top: -259px;
+}
+.single-vorteil{
+  padding: 45px 30px 35px 30px;
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.single-vorteil:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.single-vorteil img{
+  height: 130px;
+  width: 130px;
+  margin: auto;
+}
+.single-vorteil h4{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  padding: 30px 0 12px 0;
+}
+.single-vorteil p{
+  color: rgba(0, 0, 0, 0.8);
+}
+/* ===================================================================
+                            Vorteil Css End
+====================================================================*/
+
+
+/* ===================================================================
+                            Teamwork Css Start
+====================================================================*/
+.teamwork-title h3{
+  text-align: center;
+  color: #000000;
+  padding: 120px 0 40px 0;
+}
+.teamwork-area{
+  display: flex; 
+   column-gap: 70px; 
+   align-items: center;
+  padding-bottom: 144px;
+}
+.teamwork-content{
+  flex-basis: 50%;
+}
+.teamwork-image{
+  flex-basis: 50%;
+}
+
+
+/* .teamwork-area .accordion-item{
+  position: relative;
+
+}
+.teamwork-area .accordion-body .teamwork_item_img{
+  position: absolute;
+  right: -100px;
+  top: 0px;
+} */
+
+
+
+.mobile_dein{
+  display: none;
+  max-width: 376px;
+  width: 100%;
+  margin: auto;
+}
+.teamwork-content .accordion-body {
+  text-align: center;
+}
+.teamwork-content .accordion-body p{
+  text-align: left !important;
+}
+.teamwork-content .accordion button img{
+  height: 24px;
+  width: 24px;
+  margin-right: 16px;
+}
+.teamwork-content .accordion button h5{
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  color: #3C58F7;
+}
+.teamwork-content .accordion-button.collapsed h5{
+  color: #2F2F45;
+}
+.teamwork-content .accordion-body p{
+  padding-bottom: 30px;
+  color: #000000;
+}
+.teamwork-content .accordion-button:not(.collapsed){
+  background-color: inherit;
+  box-shadow: none;
+}
+.teamwork-content .accordion-button:focus{
+  box-shadow: inherit;
+}
+.teamwork-content .accordion-item{
+  border: none !important;
+}
+.teamwork-content .accordion-body{
+  padding: 0;
+}
+.teamwork-content .accordion-button{
+  padding: 20px 0 10px 0;
+  border-top: 2px solid #E8E8E8;
+  position: relative;
+}
+.teamwork-content .accordion-button::before{
+  content: "";
+  position: absolute;
+  width: 216px;
+  height: 2px;
+  background: #3C58F7;
+  top: -2px;
+  left: 0;
+}
+.teamwork-content .accordion-button.collapsed::before{
+  display: none;
+}
+.teamwork-content .accordion-button.collapsed{
+  border-top: 1px solid #E8E8E8;
+}
+
+/* ===================================================================
+                            Teamwork Css End
+====================================================================*/
+
+/* ===================================================================
+                            Counter Css Start
+====================================================================*/
+.counter-section{
+  background: url(../images/banner-bg3.png) no-repeat scroll center center / cover;
+}
+.counter-area{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  padding: 74px 0 31px 0;
+}
+.single-counter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.single-counter h2{
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 105px;
+  color: #FFFFFF;
+  /* padding-bottom: 30px; */
+  margin-bottom: auto;
+}
+.single-counter p{
+  max-width: 175px;
+  width: 100%;
+  margin: auto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.single-counter{
+  position: relative;
+}
+.single-counter:nth-of-type(1)::after{
+  position: absolute;
+  content: "";
+  height: 180px;
+  width: 6px;
+  background: url(../images/counter1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  right: -3px;
+  top: 0;
+}
+.single-counter:nth-of-type(2)::after{
+  position: absolute;
+  content: "";
+  height: 180px;
+  width: 6px;
+  background: url(../images/counter2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  right: -3px;
+  top: 0;
+}
+/* ===================================================================
+                            Counter Css End
+====================================================================*/
+
+
+/* ===================================================================
+                            Dein Tool Css Start
+====================================================================*/
+.deintool-title h3{
+  text-align: center;
+  line-height: 48px;
+  color: #000000;
+  padding: 90px 0 36px 0;
+}
+.deintool-area{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 125px;
+}
+.deintool-header{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding-bottom: 13px;
+}
+.deintool-header img{
+  height: 24px;
+  width: auto;
+}
+.deintool-header h4{
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  color: #000000;
+}
+.single-deintool:nth-of-type(1){
+  padding-right: 22px;
+  border-right: 1px solid #D9D9D9;
+}
+.single-deintool:nth-of-type(2){
+  padding-right: 17px;
+  padding-left: 20px;
+  border-right: 1px solid #D9D9D9;
+}
+.single-deintool:nth-of-type(3){
+  padding-left: 30px;
+}
+.single-deintool p{
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* ===================================================================
+                            Dein Tool Css End
+====================================================================*/
+
+
+/* ===================================================================
+                            Tage Banner Css Start
+====================================================================*/
+.tage-area {
+  text-align: center;
+  background: url(../images/banner-bg4.png) no-repeat scroll center center / cover;
+  border-radius: 20px;
+  padding: 85px 10px 60px 10px;
+}
+.tage-area h3{
+  max-width: 632px;
+  width: 100%;
+  margin: auto;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  color: #003D79;
+  padding-bottom: 20px;
+}
+.tage-area .btn1{
+  background: #0180FF;
+  transition: .5s;
+}
+.tage-area .btn1:hover{
+  background: #003D79;
+  border: 1px solid #003D79;
+}
+.Noch_content .btn1{
+  transition: 0.5s;
+}
+.Noch_content .btn1:hover{
+  background: #003D79;
+  border: 1px solid #003D79;
+}
+/* ===================================================================
+                            Tage Banner Css End
+====================================================================*/
+
+/* ===================================================================
+                            FAQ Css Start
+====================================================================*/
+.FAQ_title h3{
+  text-align: center;
+  padding-bottom: 35px;
+  padding-top: 109px;
+}
+.FAQ_area .accordion-button {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: #424046;
+  padding: 30px 35px;
+  padding-right: 40px;
+}
+.FAQ_area .accordion-body{
+  padding: 30px 35px;
+  padding-right: 40px;
+  padding-top: 10px;
+}
+.FAQ_area .accordion-body p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #F5F5F5;
+}
+.FAQ_area .accordion-button:not(.collapsed) {
+  color: #FFF;
+  font-size: 25px;
+  background: #0B1D2F;
+  box-shadow: none;
+  padding-bottom: 0px;
+}
+.FAQ_area .accordion-item {
+  color: #FFF;
+  background: #0B1D2F;
+  border-radius: 8px;
+}
+.FAQ_area .accordion-button:focus{
+  box-shadow: inherit;
+}
+.FAQ_area .accordion-item {
+  color: #FFF;
+  background: #0B1D2F;
+  border-radius: 8px;
+  border: none;
+  border-bottom: 1px solid #D9D9D9;;
+}
+.FAQ_area .accordion-button::after {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/Faq_icon1.png);
+  background-size: 100%;
+}
+.FAQ_area .accordion-button:not(.collapsed)::after {
+  background-image: url(../images/Faq_icon2.png);
+  transform: rotate(0deg);
+}
+/* ===================================================================
+                            FAQ Css End
+====================================================================*/
+
+/* ===================================================================
+                            Noch Css End
+====================================================================*/
+.Noch_area{
+  margin-top: 80px;
+  background: url(../images/noch_banner.png) no-repeat scroll center center / cover;
+}
+.Noch_content{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 80px 10px;
+}
+.Noch_content h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #003D79;
+}
+/* ===================================================================
+                            Noch Css End
+====================================================================*/
+
+/* ===================================================================
+                            Team Css Start
+====================================================================*/
+.Team_area{
+  padding-top: 151px;
+  padding-bottom: 80px;
+}
+.Team_content{
+  display: flex;
+  align-items: center;
+}
+.team_title{
+  text-align: center;
+  padding-bottom: 30px;
+}
+.single_team h6{
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 16px;
+}
+.single_team p{
+  font-size: 15px;
+  color: #424046;
+}
+.single_team img{
+  border-radius: 8px;
+}
+/* ===================================================================
+                            Team_content Css End
+====================================================================*/
+
+/* ===================================================================
+                            Footer Css End
+====================================================================*/
+.footer_area{
+  background: url(../images/footer_banner.png) no-repeat scroll center bottom / contain;
+  background-size: 100% 100%;
+}
+.footer_content{
+  padding-top: 152PX;
+  padding-bottom: 40PX;
+  border-bottom: 1px solid  #2E2D2D;
+}
+.footer_logo{
+  max-width: 161px;
+  width: 100%;
+}
+.footer_social ul{
+  padding-top: 33px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer_social ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 43px;
+  width: 43px;
+  border-radius: 50%;
+  border: 1px solid #535252;
+  transition: 0.5s;
+}
+.footer_social ul li a {
+  font-size: 20px;
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+.footer_social ul li:hover{
+  border: 1px solid #3561FF;
+}
+.footer_social ul li:hover a{
+  color: #3561FF;
+}
+.footer_copy_right{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  color:#737272 ;
+  padding: 30px 0px;
+}
+.copy_right_right ul li a{
+  color: inherit;
+}
+.copy_right_right ul{
+  display: flex;
+  align-items: center;
+  gap: 20px 40px;
+}
+/* ===================================================================
+                            Footer Css End
+====================================================================*/
+
+
+
+ /***********************/
+ /****Preloader CSS ***/
+/***********************/
+.preloader {
+	background: #FFF;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+}
+.preloader img{
+  height: 60px;
+  width: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
